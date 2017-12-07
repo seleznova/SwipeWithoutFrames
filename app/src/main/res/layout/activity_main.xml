@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="marynakuzmenko.swipewithoutfragments.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behaviour="@string/appbar_scrolling_view_behaviour">
+
+    <include
+        android:id="@+id/step1_layout"
+        layout="@layout/step1" />
+
+        <include
+            android:id="@+id/step2_layout"
+            layout="@layout/step2" />
+
+        <include
+            android:id="@+id/step3_layout"
+            layout="@layout/step3" />
+
+    </android.support.v4.view.ViewPager>
+
+</android.support.constraint.ConstraintLayout>
